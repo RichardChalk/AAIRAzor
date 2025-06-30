@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h2>Tre saker att se i York:</h2>
+<ul>
+    @foreach (var item in Model.Suggestions)
+    {
+        <div>@item</div>
+    }
+</ul>
