@@ -30,7 +30,8 @@ namespace AAIRAzor.Pages
             // 3. och ToList() samlar allt till en List<string>
             Suggestions = result.Value.Content[0].Text
                 .Split('\n', StringSplitOptions.RemoveEmptyEntries)
-                .Select(s => s.Trim('-', ' ', '\r')).ToList();
+                .Select(s => s.Trim('-', ' ', '\r'))
+                .ToList();
         }
     }
 }
